@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    tools:context=".Fragmentos.Fragmento_Reserva_Libros" >
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAbajo"
+        android:layout_width="586dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="588dp"
+        android:src="@drawable/circulo_relleno_reves"
+        android:tint="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCasa"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:onClick="botonCasaLibrosPulsado"
+        android:src="@drawable/casa"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReservaLibros"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="496dp"
+        android:backgroundTint="#F8F5F5"
+        android:fontFamily="@font/montserrat_bold"
+        android:onClick="botonReservarLibrosPulsado"
+        android:text="REALIZAR PETICICION DE RESERVA"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculo"
+        android:layout_width="666dp"
+        android:layout_height="375dp"
+        android:layout_marginBottom="544dp"
+        android:src="@drawable/circulo_relleno2"
+        android:tint="#F5C809"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAjustes"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/circulo_relleno"
+        android:tint="#f8efe4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="RESERVA DE LIBROS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewIconoLibro"
+        android:layout_width="85dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/docs"
+        android:tint="#49454F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/libro" />
+
+    <ImageView
+        android:id="@+id/imageViewAjustes3"
+        android:layout_width="37dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:onClick="botonVolverReservaPulsado"
+        android:src="@drawable/deshacer"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNombreLibro"
+        android:layout_width="328dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="228dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Escribe el nombre del libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="NOMBRE DEL LIBRO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="AUTOR DEL LIBRO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNombreAutor"
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="344dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Escribe el nombre del autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Selecciona fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewNotificacion"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/campana"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewUser4"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/usuario"
+        android:tint="#F4C709"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

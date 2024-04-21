@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    tools:context=".Fragmentos.Fragmento_Proyectos">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProyectos"
+        android:layout_width="407dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="184dp"
+        android:textAlignment="center"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAbajo5"
+        android:layout_width="586dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="588dp"
+        android:src="@drawable/circulo_relleno_reves"
+        android:tint="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewUser5"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/usuario"
+        android:tint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imageViewNotificacion5"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/campana"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculo5"
+        android:layout_width="666dp"
+        android:layout_height="375dp"
+        android:layout_marginBottom="544dp"
+        android:background="#2DFFFFFF"
+        android:src="@drawable/circulo_relleno2"
+        android:tint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAjustes7"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/circulo_relleno"
+        android:tint="#f8efe4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewAjustes5"
+        android:layout_width="37dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:onClick="botonVolverProyectosPulsado"
+        android:src="@drawable/deshacer"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCasa5"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:onClick="botonCasaProyectosPulsado"
+        android:src="@drawable/casa"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="PROYECTOS DE FIN DE CICLO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewIconoLibro3"
+        android:layout_width="85dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ordenador"
+        android:tint="#49454F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/libro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

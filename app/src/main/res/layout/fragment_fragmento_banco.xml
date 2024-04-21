@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    tools:context=".Fragmentos.Fragmento_Banco_Archivos">
+
+    <TextView
+        android:id="@+id/textViewSubirArchivo5"
+        android:layout_width="124dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="216dp"
+        android:background="#FEFEFE"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:onClick="botonProyectosPulsado"
+        android:text="PROYECTOS DE FIN DE CICLO"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubirArchivo6"
+        android:layout_width="124dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="380dp"
+        android:background="#FEFEFE"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="PDFs"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubirArchivo7"
+        android:layout_width="124dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="380dp"
+        android:background="#FEFEFE"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="PODCASTS"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubirArchivo8"
+        android:layout_width="124dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="216dp"
+        android:background="#FEFEFE"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="BANCO DE APUNTES"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSubirArchivoi6"
+        android:layout_width="65dp"
+        android:layout_height="86dp"
+        android:onClick="botonProyectosPulsado"
+        android:src="@drawable/proyecto"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSubirArchivo5"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSubirArchivo5"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textViewSubirArchivo5"
+        app:layout_constraintTop_toTopOf="@+id/textViewSubirArchivo5"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <ImageView
+        android:id="@+id/imageViewSubirArchivoi7"
+        android:layout_width="74dp"
+        android:layout_height="94dp"
+        android:src="@drawable/pdf"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSubirArchivo6"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSubirArchivo6"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="@+id/textViewSubirArchivo6"
+        app:layout_constraintTop_toTopOf="@+id/textViewSubirArchivo6"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/imageViewSubirArchivoi8"
+        android:layout_width="72dp"
+        android:layout_height="93dp"
+        android:src="@drawable/apuntes_de_clase"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSubirArchivo8"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSubirArchivo8"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="@+id/textViewSubirArchivo8"
+        app:layout_constraintTop_toTopOf="@+id/textViewSubirArchivo8"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <ImageView
+        android:id="@+id/imageViewSubirArchivoi9"
+        android:layout_width="65dp"
+        android:layout_height="86dp"
+        android:src="@drawable/podcast"
+        android:tint="#d33333"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSubirArchivo7"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSubirArchivo7"
+        app:layout_constraintStart_toStartOf="@+id/textViewSubirArchivo7"
+        app:layout_constraintTop_toTopOf="@+id/textViewSubirArchivo7" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAbajo2"
+        android:layout_width="586dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="596dp"
+        android:src="@drawable/circulo_relleno_reves"
+        android:tint="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewNotificacion2"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/campana"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewUser2"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/usuario"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCasa2"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:onClick="botonCasaPulsado"
+        android:src="@drawable/casa"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculo2"
+        android:layout_width="666dp"
+        android:layout_height="375dp"
+        android:layout_marginBottom="544dp"
+        android:src="@drawable/circulo_relleno2"
+        android:tint="#d87b78"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAjustes2"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/circulo_relleno"
+        android:tint="#f8efe4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewAjustes2"
+        android:layout_width="37dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:onClick="botonVolverPulsado"
+        android:src="@drawable/deshacer"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSubirArchivoi10"
+        android:layout_width="85dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/docs"
+        android:tint="#49454F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/libro" />
+
+    <TextView
+        android:id="@+id/textViewUsuario2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="BANCO DE APUNTES"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

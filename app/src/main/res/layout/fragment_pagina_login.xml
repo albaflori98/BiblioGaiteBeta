@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    tools:context=".Fragmentos.Fragmento_Pagina_Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="264dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="75dp"
+        android:src="@drawable/logo_carmen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <TextView
+        android:id="@+id/tituloBiblioGaite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="19dp"
+        android:background="#00000000"
+        android:fontFamily="monospace"
+        android:text="BIBLIOGAITE"
+        android:textColor="#D33333"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="412dp"
+        android:layout_height="195dp"
+        android:background="#D33333"
+        android:backgroundTint="#D33333"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="301dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloBiblioGaite">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="310dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="245dp"
+                android:layout_height="46dp"
+                android:background="#E7E7E7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.133" />
+
+            <EditText
+                android:id="@+id/editTextTextEmail"
+                android:layout_width="205dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/editTextContrasenha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewUsuario"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.53" />
+
+            <TextView
+                android:id="@+id/textViewContrasenha"
+                android:layout_width="245dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="7dp"
+                android:background="#E7E7E7"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewUsuario" />
+
+            <ImageView
+                android:id="@+id/imageViewUsuario"
+                android:layout_width="42dp"
+                android:layout_height="52dp"
+                android:src="@drawable/perfil_del_usuario"
+                android:tint="#E18585"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewContrasenha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.629" />
+
+            <ImageView
+                android:id="@+id/imageViewContrasenha"
+                android:layout_width="35dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/candado"
+                android:tint="#E39C9C"
+                app:layout_constraintEnd_toStartOf="@+id/editTextContrasenha"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
+                app:srcCompat="@drawable/cerrar_con_llave" />
+
+            <EditText
+                android:id="@+id/editTextContrasenha"
+                android:layout_width="203dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewContrasenha"
+                app:layout_constraintEnd_toEndOf="@+id/textViewContrasenha"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/textViewContrasenha"
+                app:layout_constraintTop_toTopOf="@+id/textViewContrasenha"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="144dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="82dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#D23333"
+                android:fontFamily="monospace"
+                android:onClick="botonLoginPulsado"
+                android:text="LOGIN"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="159dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="7dp"
+                android:text="¿Has olvidado tu contraseña?"
+                android:textColor="#e18585"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxRecordarUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/textViewContrasenha" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="276dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="2dp"
+                android:text="¿Aún no tienes cuenta? Creala aquí"
+                android:textAlignment="center"
+                android:textColor="#e18585"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+            <CheckBox
+                android:id="@+id/checkBoxRecordarUsuario"
+                android:layout_width="143dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="9dp"
+                android:backgroundTint="#CC7878"
+                android:text="Recordar usuario"
+                android:textColor="#E18585"
+                android:textSize="12sp"
+                app:buttonIconTint="#E18585"
+                app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewContrasenha" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

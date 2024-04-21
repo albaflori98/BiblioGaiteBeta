@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    tools:context=".Fragmentos.Fragmento_Pagina_Inicio">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="416dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="375dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="122dp"
+                    android:layout_height="132dp"
+                    android:background="#FEFEFE"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="bottom"
+                    android:onClick="botonProyectos2Pulsado"
+                    android:text="PROYECTOS FIN CICLO"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="97dp"
+                    android:src="@drawable/proyecto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="11dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="122dp"
+                    android:layout_height="132dp"
+                    android:background="#FEFEFE"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="bottom"
+                    android:text="BANCO DE APUNTES"
+                    android:textAlignment="center"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="-4dp" />
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="97dp"
+                    android:src="@drawable/apuntes_de_clase"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="11dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="122dp"
+                    android:layout_height="128dp"
+                    android:background="#FEFEFE"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="bottom"
+                    android:text="PODCASTS"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="97dp"
+                    android:src="@drawable/podcast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="11dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="122dp"
+                    android:layout_height="128dp"
+                    android:background="#FEFEFE"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="bottom"
+                    android:text="PDFS"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="97dp"
+                    android:src="@drawable/pdf"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textViewSubirArchivo9"
+        android:layout_width="84dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="524dp"
+        android:background="#FEFEFE"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:onClick="botonResenhaPulsado"
+        android:text="Añadir reseña"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewResenha2"
+        android:layout_width="38dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="512dp"
+        android:src="@drawable/docs"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewContactos2"
+        android:layout_width="84dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="524dp"
+        android:background="#FEFEFE"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="Contactos en común"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewContactos2"
+        android:layout_width="38dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="524dp"
+        android:src="@drawable/perfil_del_usuario"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toEndOf="@+id/imageViewResenha2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubirArchivo10"
+        android:layout_width="84dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="524dp"
+        android:background="#FEFEFE"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="bottom"
+        android:text="Subir archivo"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSubirArchivo9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSubirArchivoi11"
+        android:layout_width="38dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="512dp"
+        android:src="@drawable/docs"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewResenha2"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAbajo3"
+        android:layout_width="586dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="588dp"
+        android:src="@drawable/circulo_relleno_reves"
+        android:tint="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewUser3"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/usuario"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imageViewCasa3"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/casa"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/casa" />
+
+    <ImageView
+        android:id="@+id/imageViewNotificacion3"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="664dp"
+        android:src="@drawable/campana"
+        android:tint="#bbbab9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculo4"
+        android:layout_width="666dp"
+        android:layout_height="375dp"
+        android:layout_marginBottom="544dp"
+        android:src="@drawable/circulo_relleno2"
+        android:tint="#d87b78"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculoAjustes4"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/circulo_relleno"
+        android:tint="#f8efe4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewAjustes4"
+        android:layout_width="37dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:onClick="botonAjustesPulsado"
+        android:src="@drawable/ajustes"
+        android:tint="#d33333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUsuario4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="NOMBRE USUARIO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCorreo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="correo@usuario.com"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario4" />
+
+    <Button
+        android:id="@+id/buttonReservaSala3"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="248dp"
+        android:backgroundTint="#F8F5F5"
+        android:fontFamily="@font/montserrat_bold"
+        android:onClick="botonReservarSalaPulsado"
+        android:text="RESERVA DE SALA"
+        android:textAlignment="textEnd"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewOrdenador3"
+        android:layout_width="59dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="248dp"
+        android:src="@drawable/ordenador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReservaLibros3"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#F8F5F5"
+        android:fontFamily="@font/montserrat_bold"
+        android:onClick="botonReservarLibrosPulsado"
+        android:text="RESERVA DE LIBROS"
+        android:textAlignment="textEnd"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLibro3"
+        android:layout_width="52dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVerTodos3"
+        android:layout_width="117dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat_bold"
+        android:onClick="botonVerTodosPulsado"
+        android:text="Ver todos"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/textViewBancoArchivos3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBancoArchivos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="BANCO DE ARCHIVOS"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

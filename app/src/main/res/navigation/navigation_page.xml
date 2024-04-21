@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_page"
+    app:startDestination="@id/pagina_login">
+
+    <fragment
+        android:id="@+id/pagina_login"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Pagina_Login"
+        android:label="fragment_pagina_login"
+        tools:layout="@layout/fragment_pagina_login">
+        <action
+            android:id="@+id/action_pagina_login_to_fragmento_inicio"
+            app:destination="@id/fragmento_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento_banco2"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Banco_Archivos"
+        android:label="fragment_fragmento_banco"
+        tools:layout="@layout/fragment_fragmento_banco">
+        <action
+            android:id="@+id/action_fragmento_banco2_to_fragmento_inicio"
+            app:destination="@id/fragmento_inicio" />
+        <action
+            android:id="@+id/action_fragmento_banco2_to_fragmento_proyectos"
+            app:destination="@id/fragmento_proyectos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento_inicio"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Pagina_Inicio"
+        android:label="fragment_fragmento_inicio"
+        tools:layout="@layout/fragment_fragmento_inicio">
+        <action
+            android:id="@+id/action_fragmento_inicio_to_fragmento_banco2"
+            app:destination="@id/fragmento_banco2" />
+        <action
+            android:id="@+id/action_fragmento_inicio_to_fragmento_Reserva_Libros"
+            app:destination="@id/fragmento_Reserva_Libros" />
+        <action
+            android:id="@+id/action_fragmento_inicio_to_fragmento_reserva_sala"
+            app:destination="@id/fragmento_reserva_sala" />
+        <action
+            android:id="@+id/action_fragmento_inicio_to_fragmento_resenha2"
+            app:destination="@id/fragmento_resenha" />
+        <action
+            android:id="@+id/action_fragmento_inicio_to_fragmento_proyectos"
+            app:destination="@id/fragmento_proyectos" />
+        <action
+            android:id="@+id/action_fragmento_inicio_to_framento_ajustes"
+            app:destination="@id/framento_ajustes" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento_Reserva_Libros"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Reserva_Libros"
+        android:label="fragment_fragmento__reserva__libros"
+        tools:layout="@layout/fragment_fragmento__reserva__libros" >
+        <action
+            android:id="@+id/action_fragmento_Reserva_Libros_to_fragmento_inicio"
+            app:destination="@id/fragmento_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento_reserva_sala"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Reserva_Sala"
+        android:label="fragment_fragmento_reserva_sala"
+        tools:layout="@layout/fragment_fragmento_reserva_sala" >
+        <action
+            android:id="@+id/action_fragmento_reserva_sala_to_fragmento_inicio"
+            app:destination="@id/fragmento_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento_proyectos"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Proyectos"
+        android:label="fragment_fragmento_proyectos"
+        tools:layout="@layout/fragment_fragmento_proyectos" >
+        <action
+            android:id="@+id/action_fragmento_proyectos_to_fragmento_banco2"
+            app:destination="@id/fragmento_banco2" />
+        <action
+            android:id="@+id/action_fragmento_proyectos_to_fragmento_inicio"
+            app:destination="@id/fragmento_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmento_resenha"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Resenha"
+        android:label="fragment_fragmento_resenha"
+        tools:layout="@layout/fragment_fragmento_resenha" >
+        <action
+            android:id="@+id/action_fragmento_resenha_to_fragment_anhadir_resenha2"
+            app:destination="@id/fragment_anhadir_resenha" />
+        <action
+            android:id="@+id/action_fragmento_resenha_to_fragmento_inicio2"
+            app:destination="@id/fragmento_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_anhadir_resenha"
+        android:name="com.example.bibliogaitebeta.Fragmentos.Fragmento_Anhadir_Resenha"
+        android:label="fragment_anhadir_resenha"
+        tools:layout="@layout/fragment_anhadir_resenha" >
+        <action
+            android:id="@+id/action_fragment_anhadir_resenha_to_fragmento_resenha2"
+            app:destination="@id/fragmento_resenha" />
+        <action
+            android:id="@+id/action_fragment_anhadir_resenha_to_fragmento_inicio2"
+            app:destination="@id/fragmento_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/framento_ajustes"
+        android:name="com.example.bibliogaitebeta.framento_ajustes"
+        android:label="fragment_framento_ajustes"
+        tools:layout="@layout/fragment_framento_ajustes" >
+        <action
+            android:id="@+id/action_framento_ajustes_to_fragmento_inicio"
+            app:destination="@id/fragmento_inicio" />
+        <action
+            android:id="@+id/action_framento_ajustes_to_pagina_login"
+            app:destination="@id/pagina_login" />
+    </fragment>
+</navigation>
